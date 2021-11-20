@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { WeatherProvider, } from './components/_contextAPI/WeatherContext';
+import 'weather-icons/css/weather-icons.css';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
+  // const [theme, setTheme] = useContext(ThemeContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <WeatherProvider>
+        <Dashboard />
+      </WeatherProvider>
+    </>
   );
 }
 

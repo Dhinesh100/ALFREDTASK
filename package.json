@@ -3,19 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.1",
     "@testing-library/jest-dom": "^5.15.0",
-    "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "better-docs": "^2.3.2",
+    "jsdoc": "^3.6.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-scripts": "4.0.3",
+    "weather-icons": "github:erikflowers/weather-icons",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docs": "jsdoc -c jsdoc.json",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src/**/*.js --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +41,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@testing-library/react": "^12.1.2",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.27.1",
+    "jest-dom": "^4.0.0",
+    "react-test-renderer": "^17.0.2"
   }
 }

@@ -1,0 +1,32 @@
+.sidebar {
+    width: 300px;
+    background-color: #c6f8f7;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+.sidebar-dark {
+    width: 300px;
+    background-color: #211f3a;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+.sidebar-header {
+    padding: 10px;
+}
+
+.sidebar-content {
+    padding: 20px;
+}
+
+.sidebar-items {
+    padding: 10px;
+}
+
+.sidebar-items:hover {
+    cursor: pointer;
+    background-color: aqua;
+}

@@ -1,0 +1,39 @@
+.container {
+    max-height: 50vh;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.search-bar {
+    width: 40vw;
+    height: 30px;
+    outline: none;
+}
+
+.display {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    max-height: 80vh;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+}
+
+.item {
+    margin-top: 20px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
